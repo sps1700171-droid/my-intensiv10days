@@ -209,21 +209,17 @@
             background-color: white;
             border: 2px solid var(--sage);
             text-decoration: none;
-            font-size: 1.4rem;
             transition: all 0.3s ease;
             color: var(--sage);
-        }
-
-        .cta-social-link:hover {
-            background-color: var(--sage);
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(123, 155, 159, 0.3);
         }
 
         .cta-social-link.telegram:hover {
             border-color: #0088cc;
             background-color: #0088cc;
+        }
+
+        .cta-social-link.telegram:hover svg {
+            color: white;
         }
 
         .cta-social-link.instagram:hover {
@@ -234,6 +230,26 @@
         .cta-social-link.facebook:hover {
             border-color: #1877F2;
             background-color: #1877F2;
+        }
+
+        .cta-social-link.facebook:hover svg {
+            color: white;
+        }
+
+        .cta-social-link.telegram svg {
+            color: #0088cc;
+        }
+
+        .cta-social-link.facebook svg {
+            color: #1877F2;
+        }
+
+        .cta-social-link.instagram:hover svg {
+            filter: none;
+        }
+
+        .cta-social-link:hover svg {
+            color: white;
         }
 
         /* Section */
@@ -454,7 +470,6 @@
             background-color: rgba(255, 255, 255, 0.2);
             border: 2px solid white;
             text-decoration: none;
-            font-size: 1.3rem;
             transition: all 0.3s ease;
             color: white;
         }
@@ -478,6 +493,23 @@
         .offer-social-link.facebook:hover {
             border-color: #1877F2;
             color: #1877F2;
+        }
+
+        .offer-social-link svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .offer-social-link.telegram svg {
+            color: #0088cc;
+        }
+
+        .offer-social-link.facebook svg {
+            color: #1877F2;
+        }
+
+        .offer-social-link:hover svg {
+            color: inherit;
         }
 
         /* Target Audience */
@@ -530,7 +562,6 @@
             background-color: white;
             border: 2px solid var(--sage);
             text-decoration: none;
-            font-size: 1.5rem;
             transition: all 0.3s ease;
             color: var(--sage);
         }
@@ -555,6 +586,23 @@
         .social-link.facebook:hover {
             border-color: #1877F2;
             background-color: #1877F2;
+        }
+
+        .social-link svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .social-link.telegram svg {
+            color: #0088cc;
+        }
+
+        .social-link.facebook svg {
+            color: #1877F2;
+        }
+
+        .social-link:hover svg {
+            color: white;
         }
 
         /* Footer */
@@ -693,13 +741,30 @@
                 <h3 style="margin-bottom: 1.5rem; color: var(--dark);">Запишись на інтенсив</h3>
                 <div class="cta-social-links">
                     <a href="https://t.me/Growth_Up_Academia" target="_blank" rel="noopener noreferrer" class="cta-social-link telegram" title="Telegram">
-                        <span>✈️</span>
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.461c.54-.203 1.01.122.84.953z"/>
+                        </svg>
                     </a>
-                    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=zyzkoyq" target="_blank" rel="noopener noreferrer" class="cta-social-link instagram" title="Instagram">
-                        <span>📷</span>
+                    <a href="https://www.instagram.com/psyholog.coach?igsh=MXFiMzVxaTVya2RiOA==&utm_source=ig_contact_invite" target="_blank" rel="noopener noreferrer" class="cta-social-link instagram" title="Instagram">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <defs>
+                                <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#feda75;stop-opacity:1" />
+                                    <stop offset="5%" style="stop-color:#fa7e1e;stop-opacity:1" />
+                                    <stop offset="45%" style="stop-color:#d92e7f;stop-opacity:1" />
+                                    <stop offset="60%" style="stop-color:#9b36b7;stop-opacity:1" />
+                                    <stop offset="90%" style="stop-color:#515bd4;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig-grad)"/>
+                            <circle cx="12" cy="12" r="3.5" fill="white"/>
+                            <circle cx="17" cy="7" r="1.5" fill="white"/>
+                        </svg>
                     </a>
                     <a href="https://www.facebook.com/valentyna.udod.5?locale=uk_UA" target="_blank" rel="noopener noreferrer" class="cta-social-link facebook" title="Facebook">
-                        <span>f</span>
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -842,9 +907,32 @@
                 <div style="margin-top: 2.5rem;">
                     <p style="color: white; font-size: 1.1rem; margin-bottom: 1.5rem;">Запишись на інтенсив</p>
                     <div class="offer-social-links">
-                        <a href="https://t.me/Growth_Up_Academia" target="_blank" rel="noopener noreferrer" class="offer-social-link telegram" title="Telegram">✈️</a>
-                        <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=zyzkoyq" target="_blank" rel="noopener noreferrer" class="offer-social-link instagram" title="Instagram">📷</a>
-                        <a href="https://www.facebook.com/valentyna.udod.5?locale=uk_UA" target="_blank" rel="noopener noreferrer" class="offer-social-link facebook" title="Facebook">f</a>
+                        <a href="https://t.me/Growth_Up_Academia" target="_blank" rel="noopener noreferrer" class="offer-social-link telegram" title="Telegram">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.461c.54-.203 1.01.122.84.953z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/psyholog.coach?igsh=MXFiMzVxaTVya2RiOA==&utm_source=ig_contact_invite" target="_blank" rel="noopener noreferrer" class="offer-social-link instagram" title="Instagram">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <defs>
+                                    <linearGradient id="ig-grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#feda75;stop-opacity:1" />
+                                        <stop offset="5%" style="stop-color:#fa7e1e;stop-opacity:1" />
+                                        <stop offset="45%" style="stop-color:#d92e7f;stop-opacity:1" />
+                                        <stop offset="60%" style="stop-color:#9b36b7;stop-opacity:1" />
+                                        <stop offset="90%" style="stop-color:#515bd4;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig-grad2)"/>
+                                <circle cx="12" cy="12" r="3.5" fill="white"/>
+                                <circle cx="17" cy="7" r="1.5" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/valentyna.udod.5?locale=uk_UA" target="_blank" rel="noopener noreferrer" class="offer-social-link facebook" title="Facebook">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -896,9 +984,32 @@
             <h2>Запишись на інтенсив</h2>
             
             <div class="social-links">
-                <a href="https://t.me/Growth_Up_Academia" target="_blank" rel="noopener noreferrer" class="social-link telegram" title="Telegram">✈️</a>
-                <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=zyzkoyq" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram">📷</a>
-                <a href="https://www.facebook.com/valentyna.udod.5?locale=uk_UA" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook">f</a>
+                <a href="https://t.me/Growth_Up_Academia" target="_blank" rel="noopener noreferrer" class="social-link telegram" title="Telegram">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                        <path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.328-.373-.115l-6.869 4.332-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.461c.54-.203 1.01.122.84.953z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/psyholog.coach?igsh=MXFiMzVxaTVya2RiOA==&utm_source=ig_contact_invite" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                        <defs>
+                            <linearGradient id="ig-grad3" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#feda75;stop-opacity:1" />
+                                <stop offset="5%" style="stop-color:#fa7e1e;stop-opacity:1" />
+                                <stop offset="45%" style="stop-color:#d92e7f;stop-opacity:1" />
+                                <stop offset="60%" style="stop-color:#9b36b7;stop-opacity:1" />
+                                <stop offset="90%" style="stop-color:#515bd4;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#ig-grad3)"/>
+                        <circle cx="12" cy="12" r="3.5" fill="white"/>
+                        <circle cx="17" cy="7" r="1.5" fill="white"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/valentyna.udod.5?locale=uk_UA" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook">
+                    <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
             </div>
 
             <p style="color: #999; font-size: 0.95rem; margin-top: 2rem;">Дипломована психолог з правом професійної практики.<br>Перші 30 учасниць потраплять у приватну спільноту для рефлексії.</p>
