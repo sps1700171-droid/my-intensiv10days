@@ -117,10 +117,18 @@
         /* Hero Section */
         .hero {
             padding: 4rem 0 6rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: row-reverse;
             gap: 4rem;
             align-items: center;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
         }
 
         .hero-content h1 {
@@ -659,7 +667,8 @@
             }
 
             .hero {
-                grid-template-columns: 1fr;
+            .hero {
+                flex-direction: column;
                 gap: 2rem;
                 padding: 2rem 0 3rem;
             }
